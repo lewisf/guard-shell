@@ -29,5 +29,9 @@ module Guard
     def n(msg, title='', image=nil)
       Notifier.notify(msg, :title => title, :image => image)
     end
+
+    def p(msg)
+      UI.info(msg)
+    end
   end
 end
